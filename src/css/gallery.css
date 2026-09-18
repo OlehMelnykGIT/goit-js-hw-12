@@ -42,7 +42,12 @@
 }
 
 .form button {
-  min-width: 91px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 91px;
   height: 40px;
   padding: 8px 16px;
   border: none;
@@ -58,6 +63,35 @@
 .form button:hover,
 .form button:focus-visible {
   background-color: #6c8cff;
+}
+
+.load-more-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 125px;
+  height: 40px;
+  margin: 32px auto 0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: 0;
+  transition: background-color 250ms ease;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus-visible {
+  background-color: #6c8cff;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
 }
 
 .gallery {
@@ -112,28 +146,16 @@
 
 .loader {
   display: block;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 32px;
-  border: 5px solid #4e75ff;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  animation: rotation 1s linear infinite;
+  margin: 32px auto 0;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .loader.is-hidden {
   display: none;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @media (max-width: 479px) {
