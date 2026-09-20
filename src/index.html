@@ -1,29 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-12</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <main>
-      <section class="search-section">
-        <form class="form">
-          <label>
-            <input type="text" name="search-text" placeholder="Search images..." required />
-          </label>
-          <button type="submit">Search</button>
-        </form>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>goit-js-hw-12</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-        <ul class="gallery"></ul>
-        <button class="load-more-btn is-hidden" type="button">Load more</button>
-        <p class="loader is-hidden">Loading images, please wait...</p>
-      </section>
-    </main>
+<body>
+  <main>
+    <section class="search-section">
+      <form class="form">
+        <label>
+          <input type="text" name="search-text" placeholder="Search images..." required />
+        </label>
+        <button type="submit">Search</button>
+      </form>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+      <ul class="gallery"></ul>
+      <button class="load-more-btn is-hidden" type="button">Load more</button>
+      <span class="loader is-hidden">Loading images, please wait...</span>
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
